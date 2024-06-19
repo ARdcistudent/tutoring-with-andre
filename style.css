@@ -40,7 +40,7 @@ main{
     width: 70vw;
     border-radius: 20px;
     height: auto;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 1.5rem;
     color: white;
     letter-spacing: 1px;
@@ -64,6 +64,40 @@ main{
 .space_between{
     background-color: rgba(0, 0, 0, 0);
     height: 25px;
+}
+
+.contentcontainer{
+    text-align: center;
+    font-size: 20px;
+    width: 70vw;
+    border-radius: 20px;
+    height: auto;
+    margin: 0px auto;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.45);
+}
+.contentcontainer h3{
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+}
+.contentcontainer h5{
+    text-decoration: underline;
+}
+.contentcontainer img,
+.contentcontainer iframe{
+    width: 800px;
+    border: 4px black solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.contentcontainer ol,
+.contentcontainer ol a{
+    text-align: left;
+    color: chartreuse;
+    padding: 10px;
 }
 
 footer{

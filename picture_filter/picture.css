@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    height: 100vh;
+    background: radial-gradient(darkgrey, grey) no-repeat center / cover;
+}
+
+div{
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    border: 2px solid black;
+    box-shadow: 3px 2px 5px black;
+    border-radius: 10px;
+    /* animation: bringMeUp 3s ease-out infinite; */
+}
+
+.pic1{
+    background: linear-gradient(160deg, rgba(255, 0, 0, 0.3), rgba(255, 166, 0, 0.3), rgba(255, 255, 0, 0.3)),
+    url(https://picsum.photos/400) no-repeat top center / cover;
+}
+.pic2{
+    background: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)),
+    url(https://picsum.photos/400);
+}
+.pic3{
+    background: url(https://picsum.photos/400);
+}
+
+/* MERKE: 
+    Um einen Filter auf einem Bild zu platzieren sind folgende Schritte notwendig:
+        1. Bild mit CSS einfügen
+        2. Bild mit hilfe von linear-gradient min. 2 Farben hinzufügen
+        3. Die Farben MÜSSEN eine Transparenz besitzten!
+
+    linear-gradient MUSS vor dem Bild erstellt werden!
+*/
+
+
+/* @keyframes bringMeUp {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+
+
