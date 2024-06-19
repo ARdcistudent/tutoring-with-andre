@@ -1,22 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header{
     width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
-    background: linear-gradient(white, lightblue) no-repeat;
+    padding: 16px;
+    background: linear-gradient(white, lightblue);
     /* color: lightcyan; */
 }
+header h1{
+    font-family: "Playwrite PL", cursive;
+    font-style: italic;
+}
+nav{
+    font-size: 1.5rem;
+    padding: 10%;
+}
+
 main{
     width: 100vw;
-    height: 80vh;
-    background: url(./assets/img/bg.jpg);
+    height: auto;
+    background-image: url(./assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    
+    /* padding: 100px; */
+    /* padding-top: 50px; */
 }
+
+.newscontainer{
+    text-align: center;
+    width: 70vw;
+    border-radius: 20px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.45);
+}
+.newscontainer h3{
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+}
+.newscontainer img{
+    margin: 2rem 0;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.btn{
+    margin: 2rem 0;
+}
+
 footer{
     width: 100vw;
     height: 10vh;
-    text-align: center;
-    /* linebefehl zum centrieren! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(lightblue, white);
 }
