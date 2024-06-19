@@ -1,0 +1,22 @@
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: linear-gradient(white, lightblue) no-repeat;
+    /* color: lightcyan; */
+}
+main{
+    width: 100vw;
+    height: 80vh;
+    background: url(./assets/img/bg.jpg);
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    /* linebefehl zum centrieren! */
+    background: linear-gradient(lightblue, white);
+}
