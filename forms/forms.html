@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="forms.css">
+    <title>Formular</title>
+</head>
+<body>
+        <div style="float: right; padding: 25px;">
+                <a href="../index.html" class="btn btn-primary">Zurück zur Startseite</a>
+                </div>
+                
+    <!--    action regelt WER das Formular bekommt!
+            z.b.: Server oder eine E-Mail
+    -->
+    <!--    method regelt WIE das Formular versendet wird:
+            get =   Abfrage an Server (Daten sind im Link zu sehen!)
+            post =  Versenden von Daten
+    -->
+
+    <form action="mailto:blabla@whatever.de" method="post" autocomplete="off">
+
+        <h1>Mein Formular</h1>
+
+        <!-- Beschreibung, damit der User weiß wozu das Feld dient werden mit "label" gemacht, ausserdem erweitert es den klickbaren Bereich in bestimmten Situationen -->
+
+        <label for="text">Text</label>
+        <!-- Eingabefeld für Texte -->
+        <input type="text" value="" placeholder="Bitte gib hier deinen Text ein" id="text">
+
+        <label for="textarea">Textarea</label>
+        <!-- Eingabefeld für läbgere Texte -->
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Gib bitte deine Nachricht ein"></textarea>
+
+        <!-- Weitere mögliche Texteingaben sind
+                > E-Mail (type="email")
+                > Passwort (type="password")
+                > Suchen (type="search")    
+                > Verlinkungen (type="url")    
+        -->
+
+        <label for="date">Date</label>
+        <!-- Eingabefeld für Datum -->
+         <input type="date" name="date" id="date">
+      
+        <label for="radio">Radioauswahl</label>
+        <!-- Einzelne Auswahl -->
+         <input type="radio" name="radio" id="radio">
+
+        <label for="checkbox">Checkbox</label>
+        <!-- Mehrfachauswahl -->
+         <input type="checkbox" name="checkbox" id="checkbox">
+
+        <label for="chose">Chose</label>
+        <!-- Auswahl aus mehreren Möglichkeiten -->
+         <select name="chose" id="chose">
+            <option value="choice1">Auswahl 1</option>
+            <option value="choice2">Auswahl 2</option>
+            <option value="choice3">Auswahl 3</option>
+            <option value="choice4">Auswahl 4</option>
+         </select>
+
+        <!-- Absendeknopf -->
+         <input type="button" value="Abschicken">
+        <!-- Alternativ kann das button-tag verwendet werden! -->
+         <button type="reset">Abbrechen</button>
+
+         <!-- Es ist sinnvoll die einzelnen Auswahlfelder in div's unterzubringen! -->
+    </form>
+</body>
+</html>
