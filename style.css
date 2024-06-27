@@ -124,6 +124,15 @@ tr:nth-child(even){
     background-color: lightblue;
 }
 
+details,
+.details_frame{
+    margin-top: 2rem;
+}
+summary{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
 footer{
     width: 100vw;
     height: 10vh;
