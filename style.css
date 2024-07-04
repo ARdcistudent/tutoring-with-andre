@@ -18,6 +18,7 @@ header{
 header h1{
     font-family: "Playwrite PL", cursive;
     font-style: italic;
+    font-size: 30px;
 }
 nav{
     font-size: 1.5rem;
